@@ -25,7 +25,10 @@ $(function(){
 
     $("button.inv").on("click", function(){
         let answer = prompt('Enter the password', '');
-        if (answer == 'bonami'){$(".ck").fadeIn(250)};
+        if (answer == 'bonami'){
+            $(".ck").fadeIn(250);
+            $(".inv").stop(true).fadeOut();
+        };
     });
     $("button.ck").on("click", function(){
         $(".ck").stop(true).fadeOut(250);
