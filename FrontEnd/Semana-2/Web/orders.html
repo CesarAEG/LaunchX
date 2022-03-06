@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Ami</title>
+
+    <link href="./common.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="container">
+
+        <header id="header">
+            <a href="../index.html" class="logo"><img src="./Images/Header/Logo.jpg" alt="Logo-BonAmi"></a>
+            <nav class="navi">
+                <ul>
+                    <li><a href="./orders.html">Orders</a></li>
+                    <li><a href="./contact.html">Visit Us</a></li>
+                    <li><a href="./Inventory.html">Inventory</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="main">
+            <div class="menu">
+                <h3>Menu</h3>
+                <p>We have different options of cakes for all tastes, from those made from common ingredients to those that we make only in certain seasons.<br><br>We look forward to receiving your order!</p>
+                <h4>Unique creations</h4>
+                <ul>
+                    <li><img src="./Images/Menu/P1.jpg" alt="Cake1"><p>Vanilla cake with chocolate frosting.</p><span>$25.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/P2.jpg" alt="Cake2"><p>Cake with caramel cover.</p><span>$30.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/P3.jpg" alt="Cake3"><p>Chocolate musse with flavored balls.</p><span>$18.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/P4.jpg" alt="Cake4"><p>Unicorn cake.</p><span>$25.00<input type="checkbox"></span></li>
+                </ul>
+                <h4>Seasonal creations</h4>
+                <ul>
+                    <li><img src="./Images/Menu/PT1.jpg" alt="CakeT1"><p>Cake with citrus fruits.</p><span>$20.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/PT2.jpg" alt="CakeT2"><p>Orange cake with blackberries.</p><span>$4.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/PT3.jpg" alt="CakeT3"><p>Ice cream cone cake decorated with macarons.</p><span>$32.00<input type="checkbox"></span></li>
+                </ul>
+                <h4>Other creations</h4>
+                <ul>
+                    <li><img src="./Images/Menu/E1.jpg" alt="Extra1"><p>Tuna jelly.</p><span>$17.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/E2.jpg" alt="Extra2"><p>Neapolitan flan.</p><span>$11.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/E3.jpg" alt="Extra3"><p>Cheese pie with strawberry jam.</p><span>$12.00<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/E4.jpg" alt="Extra4"><p>Chocolate chip cookies.</p><span>$1.50<input type="checkbox"></span></li>
+                    <li><img src="./Images/Menu/E5.jpg" alt="Extra5"><p>Chocolate and rosemary pancake.</p><span>$8.00<input type="checkbox"></span></li>
+                </ul>
+                <h4>Extra ingredients</h4>
+                <p>Don't forget that you can also add extra ingredients to your selection.</p>
+                <ul class="ie">
+                    <li>Almonds<input type="checkbox"></li>
+                    <li>Seasonal fruit<input type="checkbox"></li>
+                    <li>Melted chocolate<input type="checkbox"></li>
+                    <li>Caramel<input type="checkbox"></li>
+                </ul>
+
+                <button class="plo">Place an order</button>
+            </div>
+        </div>
+
+        <div id="modal">
+            <div class="popup">
+                <p>Before completing your order it´s necessary that you provide us the following information so that we can contact you once the order will be ready and available for pick up at the store.</p>
+                <fieldset>
+                    <legend>Order</legend>
+                        <label for="I1">Name(s)*</label><br><input type="text" id="I1" name="I1" size="40" placeholder=" Enter without margins."><br><br>
+                        <label for="I2">Surname*</label><br><input type="text" id="I2" name="I2" size="40" placeholder=" Enter without margins."><br><br>
+                        <label for="I3">E-mail*</label><br><input type="email" id="I3" name="I3" size="40" placeholder=" Enter without margins."><br><br>
+                        <label for="I4">Mobile Phone*</label><br><input type="tel" id="I4" name="I4" maxlength="10" size="40" placeholder="Enter only 10 numbers."><br><br>
+                        <label for="I5">Special instructions</label><br><input type="text" name="I5" id="I5" size="40" placeholder="Let us know any special request."><br><br>
+                        <button class="ord" onclick="save()"><a href="../index.html">Order</a></button>
+                </fieldset>
+            </div>
+        </div>
+
+        <footer id="footer">
+
+            <address>Copyrightⓒ by Bon-Ami, all rights reserved.</address>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="./Images/SNS/sns1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./Images/SNS/sns2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./Images/SNS/sns3.jpg" alt=""></a></li>
+                </ul>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="Script/jquery-1.12.3.js"></script>
+    <script src="Script/Script.js"></script>
+    
+</body>
+</html>

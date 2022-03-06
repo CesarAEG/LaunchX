@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+html {
+    font-family: "Malgun Gothic", sans-serif;
+    font-size: 16px;
+    color: #454545;
+    background: linear-gradient(#f9e3c7, #f9e3c7, rgba(249, 227, 199, 0.5), #fff);
+    background-repeat: no-repeat;
+}
+body, h1, h2, h3, h4, h5, h6, ul, ol ,dl, form, table {
+    padding: 0;
+    margin: 0;
+}
+ul, ol, dl {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+img {
+    display: block;
+}
+#container {
+    width: 640px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+    a.logo, a.logo img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+    nav.navi {
+        height: 50px;
+    }
+    nav.navi ul li {
+        float: left;
+        width: 33%;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    nav.navi ul li a:hover {
+        color: #b7816c;
+        text-shadow: 1px 1px 1px #fff7ee;
+        text-decoration: underline;
+    }
+#footer {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+    address {
+        float: left;
+        width: 80%;
+        line-height: 100px;
+        font-weight: bold;
+    }
+    div.sns {
+        width: 20%;
+        float: left;
+    }
+    .sns ul li {
+        float: left;
+        margin-left: 20px;
+    }
+    .sns ul li:first-child {
+        margin-left: 0px;
+    }
+    .sns ul li a img {
+        margin-top: 37.5px;
+        height: 25px;
+        border-radius: 6px;
+    }
+    .sns ul li a img:hover {
+        opacity: 0.5;
+        filter: grayscale(1);
+        background-repeat: repeat-x;
+    }
+
+/* Principal */
+
+#slideshow {
+    height: 225px;
+    width: 640px;
+    position: relative;
+    margin-top: 10px;
+}
+#slideshow div.slides {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#slideshow div.slides div.sld {
+    width: 640px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#slideshow div.slides div.sld img {
+    width: 100%;
+    height: 100%;
+}
+#slideshow div.slides div.sld h2 {
+    position: absolute;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 2px;
+}
+#slideshow div.slides div.sld.t1 h2 {
+    bottom: 10px;
+    right: 0;
+    padding-right: 10px;
+    width: 400px;
+    background: linear-gradient(90deg, transparent, rgba(113, 27, 4, 0.8));
+    color: #f5f5f5;
+    text-shadow: 2px 2px 1px #711b04;
+}
+#slideshow div.slides div.sld.t2 h2 {
+    top: 10px;
+    left: 0;
+    width: 640px;
+    background: linear-gradient(90deg, transparent, #f5f5f5, transparent);
+    text-shadow: 2px 2px 1px #f5f5f5;
+}
+#slideshow div.slides div.sld.t3 h2 {
+    left: 10px;
+    bottom: 10px;
+    width: 300px;
+    background: rgba(245, 245, 245, 0.6);
+    text-shadow: 2px 2px 1px #f5f5f5;
+}
+
+
+/* Orders */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+#main {
+    width: 100%;
+    padding-top: 20px;
+}
+    .menu {
+    text-align: center;
+    }
+    .menu h3 {
+        text-shadow: 1px 1px 0 #ccc;
+        font-size: 25px;
+    }
+    .menu h4 {
+        line-height: 80px;
+        font-size: 22px;
+    }
+    .menu h4 {
+        border-bottom: solid 3px #b7816c;
+    }
+    .menu ul {
+        padding-top: 20px;
+    }
+    .menu > ul > li {
+        float: left;
+        width: 100%;
+        height: 180px;
+    }
+    .menu > ul > li > img {
+        float: left;
+        width: 25%;
+        border: solid 3px #b7816c;
+        border-radius: 30px;
+    }
+    .menu ul li p, .menu ul li p span {
+        width: 70%;
+        height: 50px;
+        float: right;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Dancing Script', cursive;
+    }
+    .ie {
+        float: left;
+        width: 100%;
+        height: 150px;
+        font-size: 20px;
+        font-family: 'Dancing Script', cursive;
+    }
+    ul.ie > li {
+        height: 35px;
+    }
+    button {
+        float: left;
+        position: relative;
+        left: 38%;
+        line-height: 30px;
+        width: 150px;
+        background: #f9e3c7;
+        border: solid 3px #b7816c;
+        border-radius: 10px;
+
+    }
+    button:hover {
+        background: #b7816c;
+        border: solid 3px #f9e3c7;
+        color: #f9e3c7;
+    }
+    #modal {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        background-color: rgba(0,0,0,0.6);
+        display: none;
+    }
+    #modal div.popup {
+        position: relative;
+        left: 45%;
+        top: 37%;
+        width: 380px;
+        height: 475px;
+        box-sizing: border-box;
+        margin: -200px 0 0 -150px;
+        background-color: #f9e3c7;
+        border: solid 5px #b7816c;
+        border-radius: 5px;
+    }
+    #modal div.popup p {
+        width: 350px;
+        height: 60px;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        padding-top: 0;
+    }
+    #modal div.popup fieldset {
+        position: relative;
+        left: 10px;
+        width: 320px;
+        height: 325px;
+    }
+    #modal div.popup button {
+        position: absolute;
+        top: 335px;
+    }
+
+/* Inventory */
+
+.ck {
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, td, th {
+    border: 2px solid #b7816c;
+    padding:20px;
+}
+
+/* Contact */
+
+#contact {
+    text-align: center;
+}
+iframe {
+    border: solid 5px #b7816c;
+    border-radius: 15px;
+}
