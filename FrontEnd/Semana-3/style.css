@@ -14,7 +14,7 @@ ul, ol, dl {
 }
 a {
     text-decoration: none;
-    color: #333333;
+    color: #3757d5;
     display: block;
 }
 img {
@@ -39,6 +39,7 @@ body {
         height: 100%;
         width: 280px;
         margin-left: 20px;
+        color: #1f3e72;
     }
     .logo img {
         height: 30px;
@@ -84,7 +85,147 @@ div.C1P1 a > img, div.C1P1 li > img {
     div.C1P1 > p {
         color: #6d7b93;
     }
+    ul.first {
+        width: 100%;
+        height: 120px;
+    }
+    ul.first li {
+        float: left;
+        height: 20px;
+        width: 160px;
+        position: relative;
+    }
+    ul.first li a img {
+        float: left;
+        height: 15px;
+    }
+    ul.first li a p {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        float: left;
+        padding-left: 10px;
+        line-height: 30px;
+    }
+    div.schedule {
+        width: 100%;
+        height: 30px;
+        position: relative;
+    }
+        div.schedule ul a li {
+            position: absolute;
+            float: left;
+            height: 30px;
+        }
+        div.schedule ul a li p {
+            position: absolute;
+            top: -15px;
+            left: 25px;
+            width: 200px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #1f3e72;
+        }
     img.IMG1 {
         width: 50%;
         float: left;
+    }
+    div.mod1 {
+        position: absolute;
+        left: 70px;
+        width: 600px;
+        height: 90px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    div.mod1 > ul > li {
+        float: left;
+        width: 165px;
+        height: 90px;
+    }
+    div.mod1 > ul > li:last-child {
+        width: 100px;
+    }
+    div.mod1 img {
+        width: 15px;
+        float: left;
+        padding-right: 20px;
+    }
+    div.mod1 p {
+        color: #1f3e72;
+        letter-spacing: 2px;
+    }
+    div.mod1 p.inf {
+        letter-spacing: 0.5px;
+        text-align: center;
+        font-size: 14px;
+        color: #1f3e72;
+        font-weight: bold;
+    }
+    div.mod1 button {
+        width: 90px;
+        height: 40px;
+        margin-top: 25px;
+        background-color: #3757d5;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+div.marcas {
+    width: 100%;
+    height: 130px;
+}
+div.marcas img {
+    float: left;
+    width: 18%;
+    height: 40px;
+    margin: 3.5%;
+    margin-top: 50px;
+    opacity: 0.1;
+}
+div.C2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 300px;
+    overflow: hidden;
+}
+    div.C2 h3 {
+        color: #1f3e72;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .C2 p {
+        color: #6d7b93;
+        height: 80px;
+    }
+    .C2 img {
+        width: 20px;
+        margin-bottom: 20px;
+    }
+    .C2 ul {
+        margin-left: 20px;
+    }
+    .C2 ul li {
+        float: left;
+        width: 150px;
+        margin-right: 25px;
+    }
+    .C2 ul li:last-child {
+        margin-right: 0px;
+    }
+    .C2 li h4 {
+        color: #1f3e72;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .C2 li p {
+        font-size: 10px;
+    }
+div.C3 {
+    margin-top: 60px;
+}
+    .C3 > img {
+        float: left;
+        width: 45%;
+        margin-right: 5%;
+        padding-top: 50px;
     }
