@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="container">    
+        <h1>Pokedex LaunchX</h1> <br>
+        <img class="poke" src="./images/Pokedex.png" alt="PokedexImg">
+        <input type="text" placeholder="Enter a name" id="pokeName" name="pokeName"><br><br>
+        <img class="pokemon" src="./images/pokeball.png" alt="Pokemon" id="pokeImg" height="145px"><br><br>
+        <p id="pokeIdName"></p>
+        <button id="search" onclick="fetchPokemon()">Search</button>
+        <div>
+            <ul class="type">
+                <li>Type:</li>
+                <li id="pokeType"></li>
+            </ul>
+            <ul class="values">
+                <li id="pokePs"></li>
+                <li id="pokeAtk"></li>
+                <li id="pokeDef"></li>
+                <li id="pokeSpatk"></li>
+                <li id="pokeSpdef"></li>
+                <li id="pokeSpeed"></li>
+            </ul>
+            <ul class="stats">
+                <li>PS</li>
+                <li>ATK</li>
+                <li>DEF</li>
+                <li>SP-ATK</li>
+                <li>SP-DEF</li>
+                <li>SPEED</li>
+            </ul>
+        </div>
+    </div>
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+    <footer>
+        <script src="./scrypt/Pokedex.js"></script>
+    </footer>
+</body>
+</html>
