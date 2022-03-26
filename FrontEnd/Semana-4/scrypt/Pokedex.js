@@ -41,3 +41,8 @@ const pokeImage = (url) => {
     pokeImg.src = url;
     document.getElementById("pokeName").value = "";
 }
+
+document.onkeyup = enter;    
+function enter(e) {
+    if (e.which == 13) fetchPokemon();
+}
